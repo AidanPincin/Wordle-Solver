@@ -138,10 +138,10 @@ class WordFinder{
         if(wordFinder.puzzleWords.length>0){
             wordFinder.pullInfo(this)
         }
-        if(wordFinder.puzzleWords.length<4){
+        if(wordFinder.puzzleWords.length<5){
             wordFinder.puzzleWords.push(new Word(canvas.width/2,100+wordFinder.puzzleWords.length*75,wordFinder.length,wordFinder.addWord))
         }
-        else if(wordFinder.puzzleWords.length==4){
+        else if(wordFinder.puzzleWords.length==5){
             wordFinder.puzzleWords.push(new Word(canvas.width/2,100+wordFinder.puzzleWords.length*75,wordFinder.length,wordFinder.pullInfo))
         }
     }
